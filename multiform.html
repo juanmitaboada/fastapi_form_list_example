@@ -1,4 +1,14 @@
-Submit 1:
+Submit 1 GET:
+<form action="http://127.0.0.1:8000/submit1" method="GET">
+    <input type="text" name="field[]" value="field1">
+    <input type="text" name="field[]" value="field2">
+    <input type="text" name="field[]" value="field3">
+    <input type="submit" value="enviar">
+</form>
+
+<br/>
+
+Submit 1 POST:
 <form action="http://127.0.0.1:8000/submit1" method="POST">
     <input type="text" name="field[]" value="field1">
     <input type="text" name="field[]" value="field2">
@@ -8,7 +18,16 @@ Submit 1:
 
 <br/>
 
-Submit 2:
+Submit 2 GET:
+<form action="http://127.0.0.1:8000/submit2" method="GET">
+    <input type="text" name="field[]" value="field1">
+    <input type="text" name="field[]" value="field2">
+    <input type="text" name="field[]" value="field3">
+    <input type="submit" value="enviar">
+</form>
+<br/>
+
+Submit 2 POST:
 <form action="http://127.0.0.1:8000/submit2" method="POST">
     <input type="text" name="field[]" value="field1">
     <input type="text" name="field[]" value="field2">
