@@ -16,6 +16,10 @@ async def submit1_get(
     field: Annotated[List[str], Query(alias="field[]")],
     anotherfield: str = "SUBMIT1GET",
 ):
+    """
+    To get this working as an Optional argument, use this instead:
+    field: Annotated[List[str], Query(alias="field[]"), None] = None
+    """
     return {"field": field, "anotherfield": anotherfield}
 
 
